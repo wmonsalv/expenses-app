@@ -34,6 +34,8 @@ function ExpenseForm() {
             date: new Date(enteredDate)
         }
 
+        console.log(expenseDate) //test 
+
         setEnteredTitle("")
         setEnteredAmount("")
         setEnteredDate("")
