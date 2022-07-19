@@ -5,10 +5,10 @@ import {useState} from "react"
 
 function Expenses(props) {
 
-    const[filteredYear, setFielteredYear] = useState("2022")
+    const[filteredYear, setFilteredYear] = useState("2022")
 
     const filterChangeHandler = (selectedYear) => {
-        setFielteredYear(selectedYear)
+        setFilteredYear(selectedYear)
     }
 
     return (
