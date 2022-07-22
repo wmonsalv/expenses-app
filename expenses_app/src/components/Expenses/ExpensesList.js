@@ -4,10 +4,10 @@ import "./ExpensesList.css"
 const ExpenseList = (props) => {
 
   if (props.items.length === 0) {
-    return <h2 ClassName="expenses-list__fallback">Found no Expenses.</h2>
+    return <h2 className="expenses-list__fallback">Found no Expenses.</h2>
   }
 
-  return <ul ClassName="expenses-list">
+  return <ul className="expenses-list">
       {props.items.map((expense) => (
       <ExpenseItem
         key={expense.id}
