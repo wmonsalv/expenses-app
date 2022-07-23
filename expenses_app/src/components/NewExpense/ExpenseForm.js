@@ -6,6 +6,14 @@ function ExpenseForm(props) {
 
     const [showForm, setShowForm] = useState(false)
 
+    const cancelClick = (event) => {
+        event.preventDefault()
+        setShowForm(false)
+        setEnteredTitle("")
+        setEnteredAmount("")
+        setEnteredDate("")
+    }
+
     const [enteredTitle, setEnteredTitle] = useState("");
 
     const titleChangeHandler = (event) => {
@@ -66,6 +74,9 @@ function ExpenseForm(props) {
                 </div>
                 <div className="new-expense__actions">
                     <button type="submit">Add Expense</button>
+                </div>
+                <div className="new-expense__actions">
+                    <button type="submit" onClick={cancelClick}>cancel</button>
                 </div>
             </form>: <button onClick={() => setShowForm(true)}>Add New Expense</button>}
         </React.Fragment>
