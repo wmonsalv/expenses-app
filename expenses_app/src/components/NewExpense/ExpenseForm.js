@@ -76,7 +76,7 @@ function ExpenseForm(props) {
                     <button type="submit">Add Expense</button>
                 </div>
                 <div className="new-expense__actions">
-                    <button type="submit" onClick={cancelClick}>cancel</button>
+                    <button type="submit" onClick={cancelClick}>Cancel</button>
                 </div>
             </form>: <button onClick={() => setShowForm(true)}>Add New Expense</button>}
         </React.Fragment>
